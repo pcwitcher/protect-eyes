@@ -6,6 +6,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   padding: 30px;
   text-align: center;
+  -webkit-app-region: drag;
 }
 
 h1 {
@@ -27,19 +28,20 @@ p {
   margin: 20px 10px;
   text-transform: uppercase;
   outline: none;
-  transition: .2s;
+  transition: 0.2s;
   cursor: pointer;
+  -webkit-app-region: no-drag;
 }
 
 .btn:hover {
-  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .btn-close {
   background: rgb(161, 0, 0);
   color: #fff;
   font-weight: bold;
-  border-radius:  50%;
+  border-radius: 50%;
   border: none;
   font-size: 20px;
   position: absolute;
@@ -74,4 +76,3 @@ p {
     transform: scale3d(1, 1, 1);
   }
 }
-
